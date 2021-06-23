@@ -22,7 +22,7 @@ export const CitiesList = () => {
         dispatch(addAqiDataToSelectedCity(cityItem));
       }
     };
-  }, []);
+  },[]);
 
   const renderedCities = cities.map((cityData, i) => (
     <TableRow key={i} cityData={cityData} />
