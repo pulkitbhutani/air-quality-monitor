@@ -1,0 +1,10 @@
+
+.header-title{
+  display: flex;
+  justify-content: center;
+}
+
+.data-chart{
+  display: flex;
+  justify-content: center;
+}
