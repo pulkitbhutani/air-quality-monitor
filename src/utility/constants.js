@@ -1,4 +1,4 @@
-export const CITY_AQI_WEB_SOCKET_URL = "ws://city-ws.herokuapp.com/";
+export const CITY_AQI_WEB_SOCKET_URL = "wss://city-ws.herokuapp.com/";
 
 export const AIR_QUALITY_STANDARDS = {
   GOOD: { bottom: 0, top: 50, color: 'green' },
