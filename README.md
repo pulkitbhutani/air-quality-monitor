@@ -12,3 +12,5 @@ Graphing Library - Google Charts
 Continuous deployment - Netlify is used for continuous deployments as soon as there is a merge or push on master branch.
 
 Choice of graphing lib - Since the only requirement here was a bar chart, so google charts syntax looked clean and quickly applicable for a simple bar chart, hence I used google charts for this application.
+
+Time took to create the app - Around 6-7 hours.
