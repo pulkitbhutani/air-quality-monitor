@@ -12,9 +12,9 @@ export const CitiesList = () => {
   const dispatch = useDispatch();
   const cities = useSelector((state) => state.cities);
   const selectedCity = useSelector((state) => state.city);
-  let weatherSocket = new WebSocket(CITY_AQI_WEB_SOCKET_URL);
 
   useEffect(() => {
+    let weatherSocket = new WebSocket(CITY_AQI_WEB_SOCKET_URL);
     weatherSocket.onmessage = (event) => {
       const newData = JSON.parse(event.data);
       for (let cityItem of newData) {
@@ -22,7 +22,7 @@ export const CitiesList = () => {
         dispatch(addAqiDataToSelectedCity(cityItem));
       }
     };
-  },[]);
+  }, [dispatch]);
 
   const renderedCities = cities.map((cityData, i) => (
     <TableRow key={i} cityData={cityData} />
